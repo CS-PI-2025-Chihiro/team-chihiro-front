@@ -1,106 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Web Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header with Sidebar</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Welcome to My Web Page</h1>
-            <p>A simple HTML, CSS, and JavaScript starter template</p>
-        </header>
-
+  <div id="app">
+    <header class="header">
+      <button class="menu-button" id="open-sidebar" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <div>
+        <span class="header-title">Team Chihiro</span>
+      </div>
+    </header>
+    
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <button class="close-button" id="close-sidebar" aria-label="Close menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="sidebar-content">
+        <h2 class="sidebar-title">Sobre o Produto</h2>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+          <div class="menu-item">
+            <span class="menu-item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+            <span>Planos e Preços</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-icon"></span>
+            <span>Sobre a Equipe</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-icon"></span>
+            <span>Links Úteis</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-icon"></span>
+            <span>Contato</span>
+          </div>
         </nav>
-
-        <section id="home" class="content-section">
-            <h2>Home</h2>
-            <p>This is the home section of the page. You can add your content here.</p>
-            <button id="changeColorBtn" class="btn">Change Background Color</button>
-            <button id="resetColorBtn" class="btn">Reset Color</button>
-        </section>
-
-        <section id="about" class="content-section">
-            <h2>About</h2>
-            <p>This is the about section of the page. Tell your users about yourself or your company here.</p>
-        </section>
-
-        <section id="services" class="content-section">
-            <h2>Services</h2>
-            <p>This is the services section. Describe what you offer to your users or customers.</p>
-        </section>
-
-        <section id="contact" class="content-section">
-            <h2>Contact</h2>
-            <p>This is the contact section. Provide information on how to reach you.</p>
-            <form id="contactForm">
-                <div style="margin-bottom: 15px;">
-                    <label for="name" style="display: block; margin-bottom: 5px;">Name:</label>
-                    <input type="text" id="name" name="name" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ddd;">
-                </div>
-                <div style="margin-bottom: 15px;">
-                    <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
-                    <input type="email" id="email" name="email" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ddd;">
-                </div>
-                <div style="margin-bottom: 15px;">
-                    <label for="message" style="display: block; margin-bottom: 5px;">Message:</label>
-                    <textarea id="message" name="message" rows="4" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ddd;"></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </section>
-
-        <footer>
-            <p>&copy; 2025 My Web Page. All rights reserved.</p>
-        </footer>
+      </div>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const changeColorBtn = document.getElementById('changeColorBtn');
-            const resetColorBtn = document.getElementById('resetColorBtn');
-            const container = document.querySelector('.container');
-            const contactForm = document.getElementById('contactForm');
-            const originalColor = container.style.backgroundColor || 'white';
-            
-            changeColorBtn.addEventListener('click', function() {
-                const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-                container.style.backgroundColor = randomColor;
-            });
-            
-            resetColorBtn.addEventListener('click', function() {
-                container.style.backgroundColor = originalColor;
-            });
-            
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const message = document.getElementById('message').value;
-                
-                console.log('Form submitted with:', { name, email, message });
-                alert(`Thank you, ${name}! Your message has been received.`);
-                contactForm.reset();
-            });
-            
-            document.querySelectorAll('nav a').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    window.scrollTo({
-                        top: target.offsetTop - 20,
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
-    </script>
+  </div>
 </body>
 </html>

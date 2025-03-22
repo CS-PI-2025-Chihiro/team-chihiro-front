@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+header {
+    background-color: whitesmoke;
+    padding: 20px;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+main {
+    max-width: 990px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #222;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+footer{
+    text-align: center;
+}
+
+.card {
+    background-color: Gainsboro;
+    width: 250px;
+    box-shadow: 0 0 10px #222;
+    border-radius: 10px;
+
+}
+
+
+
+.cards{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}

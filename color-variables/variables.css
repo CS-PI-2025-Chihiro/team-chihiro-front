@@ -1,0 +1,17 @@
+:root{
+    /*body colors*/
+    --bg-color-body: #141414;
+    --text-color-body: #f1f1f1;
+    /*other colors*/
+    --bg-color-header: #111111;
+    --border-color-card: #f1f1f1;
+}
+
+[data-theme="light"]{
+    /*body colors*/
+    --bg-color-body: #f9f9f9;
+    --text-color-body: #1a1a1a;
+    /*other colors*/
+    --bg-color-header: #eeeeee;
+    --border-color-card: #1a1a1a;
+}

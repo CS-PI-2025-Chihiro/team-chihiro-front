@@ -1,12 +1,18 @@
 @import url("color-variables/variables.css");
 
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     background-color: var(--bg-color-body);
     color: var(--text-color-body);
-    margin: 0px;
-    padding: 0px;
+    padding: 0;
 }
 
 header {
@@ -30,7 +36,7 @@ header {
 }
 
 main {
-
+    flex: 1;
 }
 
 .service-cards {
@@ -59,7 +65,11 @@ main {
 }
 
 footer {
-
+    background-color: var(--bg-color-footer);
+    text-align: center;
+    padding:10px;
+    margin: 0px;
+    width: 100%
 }
 
 @media (max-width: 600px) {

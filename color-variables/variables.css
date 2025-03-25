@@ -5,6 +5,7 @@
     /*other colors*/
     --bg-color-header: #111111;
     --border-color-card: #f1f1f1;
+    --bg-color-footer: #111111;
 }
 
 [data-theme="light"]{

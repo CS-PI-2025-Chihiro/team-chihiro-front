@@ -1,0 +1,32 @@
+html {
+    height: 100%;
+    min-height: 100%
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    margin: 70px;
+    min-height: 100%;
+}
+
+.icon {
+    width: 150px;
+    height: 150px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #636363;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: auto;
+}

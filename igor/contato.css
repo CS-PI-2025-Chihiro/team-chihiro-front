@@ -1,0 +1,26 @@
+html{
+    height: 100%;
+    min-height: 100%    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    margin: 70px;
+    min-height: 100%;
+}
+
+h2{
+    padding-bottom: 20px;
+}
+
+.formulario{
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+footer{
+    margin-top: auto;
+}

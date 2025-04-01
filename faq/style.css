@@ -1,0 +1,37 @@
+@import url('color-variables/variables.css');
+
+body {
+
+}
+
+main {
+
+}
+
+footer {
+
+}
+
+.faq-container {
+
+}
+
+.faq-container li {
+
+}
+
+.faq-question {
+
+}
+
+.faq-question::after {
+
+}
+
+.faq-question.active::after {
+    
+}
+
+.faq-answer {
+
+}

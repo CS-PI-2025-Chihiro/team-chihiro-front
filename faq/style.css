@@ -1,4 +1,4 @@
-@import url('color-variables/variables.css');
+@import url('../color-variables/variables.css');
 
 html, body {
     height: 100%;

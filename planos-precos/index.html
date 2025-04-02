@@ -8,15 +8,19 @@
     <title>Chihiro | Planos e Preços</title>
 </head>
 
-<body>
+<body data-theme="light">
     <header>
 
     </header>
 
-    <main id="home">
+    <main>
+        <section class="config">
+            <button id="change-theme" onclick="changeTheme()">Dark</button>
+            <button id="increase-text" onclick="increaseText()">Large</button>
+        </section>
         <section class="service-container">
             <div class="card">
-                <img src="images/free-service.jpg" alt="Free Service Picture">
+                <img src="images/free-service.png" alt="Free Service Picture">
                 <h1>Plano Grátis</h1>
                 <h3>Grátis</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, unde! 
@@ -24,7 +28,7 @@
                 repudiandae officia labore vel rerum ut aliquid pariatur facilis.</p>
             </div>
             <div class="card">
-                <img src="images/default-service.jpeg" alt="Default Service Picture">
+                <img src="images/default-service.png" alt="Default Service Picture">
                 <h1>Plano Padrão</h1>
                 <h3>R$14,90/mês</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim omnis, 
@@ -32,7 +36,7 @@
                 alias maiores magnam debitis exercitationem quas accusamus nisi?</p>
             </div>
             <div class="card">
-                <img src="images/premium-services.jpeg" alt="Premium Service Picture">
+                <img src="images/premium-service.png" alt="Premium Service Picture">
                 <h1>Plano Premium</h1>
                 <h3>R$29,00/mês</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, illo! Deserunt 

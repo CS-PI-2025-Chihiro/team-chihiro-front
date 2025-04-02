@@ -14,18 +14,18 @@ header {
     text-align: center;
 }
 
-.containerColunas{ 
+.containerColunas {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 1fr 2fr;
     border-radius: 10px;
     gap: 5%;
 }
-.coluna1{
+
+.coluna1 {
     padding: 1px;
     margin-left: 10px;
     row-gap: 20px;
 }
-
 
 main {
     max-width: 990px;
@@ -36,33 +36,42 @@ main {
     padding: 20px;
 }
 
-footer{
+footer {
     text-align: center;
 }
 
-.card {
+.card,
+.cardCol3 {
     background-color: Gainsboro;
-    width: 300px;
     box-shadow: 0 0 10px #222;
     border-radius: 10px;
     text-align: center;
-    
-
-}
-.cardCol3{
-    background-color: gainsboro;
-    width: 650px;
-    box-shadow: 0 0 10px #222;
-    border-radius: 10px;
-    text-align: center;
-
+    padding: 20px;
 }
 
+.card img,
+.cardCol3 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
-.cards{
+.cards {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .containerColunas {
+        grid-template-columns: 1fr;
+    }
+
+    .card,
+    .cardCol3 {
+        width: 100%;
+    }
 }

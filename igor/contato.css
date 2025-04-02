@@ -24,3 +24,26 @@ h2{
 footer{
     margin-top: auto;
 }
+
+.botao{
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 5px;
+    height: 35px;
+    width: 80px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.botao:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #111111;
+}
+
+.botao:focus{
+    transform: scale(1.1);
+}
+
+.container{
+    border: 3px solid black;
+    padding: 25px;
+}

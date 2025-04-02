@@ -13,21 +13,24 @@
 
         <main>
             <h2>Nos contate através do e-mail:</h2>
-            <form id="formulario">
-                <div class="formulario">
-                    <label>Email:<br></label>
-                    <input type="email" id="email" name="email" style="width: 20%; padding: 8px; border-radius: 4px; border: 1px solid #ddd;">
-                </div>
-                <div class="formulario">
-                    <label>Assunto:<br></label>
-                    <input type="text" id="assunto" name="assunto" style="width: 40%; padding: 8px; border-radius: 4px; border: 1px solid #ddd;">
-                </div>
-                <div class="formulario">
-                    <label>Mensagem:<br></label>
-                    <textarea type="text" id="mensage" name="mensagem" style="width: 40%; padding: 8px; border-radius: 4px; border: 1px solid #ddd;"></textarea>
-                </div>
-                <button type="Enviar">Enviar</button>
-            </form>
+            
+            <div class="container">
+                <form id="formulario" action="https://formsubmit.co/teamchihiroifpr@gmail.com" method="POST">
+                    <div class="formulario">
+                        <label>Email:<br></label>
+                        <input required type="email" id="email" name="email" style="width: 20%; padding: 8px; border-radius: 4px; border: 1px solid #ddd;">
+                    </div>
+                    <div class="formulario">
+                        <label>Assunto:<br></label>
+                        <input required type="text" id="assunto" name="assunto" style="width: 40%; padding: 8px; border-radius: 4px; border: 1px solid #ddd;">
+                    </div>
+                    <div class="formulario">
+                        <label>Mensagem:<br></label>
+                        <textarea required type="text" id="mensage" name="mensagem" style="width: 40%; padding: 8px; border-radius: 4px; border: 1px solid #ddd;"></textarea>
+                    </div>
+                    <button class="botao" type="submit">Enviar</button>
+                </form>
+            </div>
         </main>
 
         <footer>

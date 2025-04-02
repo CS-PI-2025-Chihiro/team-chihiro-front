@@ -8,13 +8,19 @@
     <title>FAQs | Team Chihiro</title>
 </head>
 
-<body>
+<body data-theme="light">
     <header>
 
     </header>
 
     <main>
-        <h1>FAQ (Perguntas Frequentes)</h1>
+        <section class="title-container">
+            <h1>FAQ (Perguntas Frequentes)</h1>
+            <section class="config">
+                <button id="change-theme" onclick="changeTheme()">Dark</button>
+                <button id="increase-text" onclick="increaseText()">Large</button>
+            </section>
+        </section>
         <ul class="faq-container"></ul>
     </main>
 

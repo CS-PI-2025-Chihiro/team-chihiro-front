@@ -52,3 +52,44 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => console.error("Erro ao carregar FAQ:", error));
 });
+
+function changeTheme() {
+    const currentTheme = document.body.getAttribute("data-theme");
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+    document.body.setAttribute("data-theme", newTheme);
+    const button = document.getElementById("change-theme");
+    button.textContent = newTheme === "light" ? "Dark" : "Light";
+}
+
+function increaseText() {
+    const body = document.body;
+    const button = document.getElementById("increase-text");
+    const currentSize = window.getComputedStyle(body).fontSize;
+
+    const faqQuestions = document.querySelectorAll(".faq-question");
+    const faqAnswers = document.querySelectorAll(".faq-answer");
+
+    let newSize;
+    let textButton;
+    if (currentSize === "20px") { 
+        newSize = "24px"; 
+        textButton = "Small";
+    } else if (currentSize === "24px") { 
+        newSize = "16px"; 
+        textButton = "Medium";
+    } else {
+        newSize = "20px"; 
+        textButton = "Large";
+    }
+
+    button.textContent = textButton;
+    body.style.fontSize = newSize;
+
+    faqQuestions.forEach(question => {
+        question.style.fontSize = newSize;
+    });
+
+    faqAnswers.forEach(answer => {
+        answer.style.fontSize = newSize;
+    });
+}

@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="contato.css">
+        <meta name=description content="Entre em contato com a Team Chihiro pelo formulário online. Envie dúvidas, sugestões ou mensagens diretamente para nossa equipe do IFPR - Campus Paranavaí.">
         <title>Contato</title>
     </head>
     <body>
@@ -17,16 +18,16 @@
             <div class="container">
                 <form id="formulario" action="https://formsubmit.co/teamchihiroifpr@gmail.com" method="POST">
                     <div class="formulario">
-                        <label>E-mail:<br></label>
+                        <label for="email">E-mail:<br></label>
                         <input class="email" required type="email" id="email" name="email">
                     </div>
                     <div class="formulario">
-                        <label>Assunto:<br></label>
+                        <label for="assunto">Assunto:<br></label>
                         <input required type="text" id="assunto" name="assunto">
                     </div>
                     <div class="formulario">
-                        <label>Mensagem:<br></label>
-                        <textarea required type="text" id="mensage" name="mensagem"></textarea>
+                        <label for="mensagem">Mensagem:<br></label>
+                        <textarea required type="text" id="mensagem" name="mensagem"></textarea>
                     </div>
                     <button class="botao" type="submit">Enviar</button>
                 </form>

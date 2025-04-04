@@ -44,16 +44,59 @@ footer{
 }
 
 
-input{
-    width: 40%;
+input, textarea{
+    width: 400px;
     padding: 8px;
     border-radius: 4px;
     border: 1px solid #ddd;
 }
 
-textarea {
-    width: 40%;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
+textarea{
+    height: 70px;
 }
+
+.email{
+    width: 300px;
+}
+
+@media (max-width: 320px) {
+    body{
+        margin: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    body{
+        margin: 40px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    .formulario{
+        font-size: 30px;
+    }
+
+    .email{
+        width: 70%;
+    }
+    
+    input, textarea {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    textarea{
+        height: 100px;
+    }
+
+    .botao{
+        width: 30%;
+        font-size: 20px;
+    }
+
+}
+
+
+

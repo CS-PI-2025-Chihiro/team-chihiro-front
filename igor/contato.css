@@ -12,6 +12,10 @@ body {
     min-height: 100%;
 }
 
+footer{
+    margin-top: auto;
+}
+
 h2{
     padding-bottom: 20px;
 }
@@ -21,8 +25,19 @@ h2{
     padding-bottom: 15px;
 }
 
-footer{
-    margin-top: auto;
+input, textarea{
+    width: 400px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+textarea{
+    height: 70px;
+}
+
+.email{
+    width: 300px;
 }
 
 .botao{
@@ -41,22 +56,6 @@ footer{
 
 .botao:focus{
     transform: scale(1.1);
-}
-
-
-input, textarea{
-    width: 400px;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-}
-
-textarea{
-    height: 70px;
-}
-
-.email{
-    width: 300px;
 }
 
 @media (max-width: 320px) {

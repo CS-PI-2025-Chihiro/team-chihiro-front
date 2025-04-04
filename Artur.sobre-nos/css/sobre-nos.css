@@ -5,14 +5,12 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-
 }
 
 header {
     background-color: rgb(184, 141, 23);
     padding: 20px;
     font-size: 1.8em;
-
 }
 
 main {
@@ -21,18 +19,20 @@ main {
     border-radius: 5px;
     box-shadow: 0 0 0 5px #ffffff;
     margin: 25px auto;
-    
 }
 
 .negrito {
     font-weight: bold;
 }
 
-.cards {
+
+.top-cards {
     display: flex;
-    gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 40px;
+    
+    margin-bottom: 40px;
+   
 }
 
 .card {
@@ -40,12 +40,14 @@ main {
     text-align: center;
     border-radius: 20px;
     padding: 10px;
-    margin-bottom: 30px;
 }
 
 .card img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    
+    object-fit: cover;
+   
     border-radius: 10px;
 }
 
@@ -55,8 +57,32 @@ main {
     font-weight: bold;
 }
 
-@media (max-whidth: 600px) {
+
+.bottom-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bottom-cards .card {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
     .card {
         width: 95%;
+    }
+
+    .top-cards {
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+
+    .card img {
+        height: auto;
+        
     }
 }

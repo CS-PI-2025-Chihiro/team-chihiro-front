@@ -16,13 +16,23 @@ footer{
     margin-top: auto;
 }
 
+h1 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
 h2{
     padding-bottom: 20px;
+    margin-left: 100px;
+}
+
+.container{
+    margin-left: 100px;
 }
 
 .formulario{
     font-weight: bold;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
 input, textarea{
@@ -69,12 +79,21 @@ textarea{
         margin: 40px;
     }
 
-    h2{
+    h1{
         font-size: 40px;
     }
 
-    .formulario{
+    h2{
         font-size: 30px;
+        margin-left: 40px;
+    }
+
+    .container{
+        margin-left: 40px;
+    }
+
+    .formulario{
+        font-size: 25px;
     }
 
     .email{

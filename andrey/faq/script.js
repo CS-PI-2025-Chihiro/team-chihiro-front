@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 button.addEventListener("keydown", (event) => {
                     if(event.key === "Enter" || event.key === " ") {
-                        event.preventDefalt();
+                        event.preventDefault();
                         button.click();
                     }
                 })

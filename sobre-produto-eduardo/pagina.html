@@ -1,106 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="../rakoski/style.css">
-    <script src="../rakoski/script.js"></script>
-</head>
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="../script.js"></script>
+  </head>
 
-<body>
+  <body>
     <div id="app">
-        <header class="header">
-            <button class="menu-button" id="open-sidebar" aria-label="Menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-            </button>
-            <div>
-                <span class="header-title">Team Chihiro</span>
-            </div>
-        </header>
-        <div class="sidebar-overlay" id="sidebar-overlay"></div>
-    <div class="sidebar" id="sidebar">
-      <div class="sidebar-header">
-        <button class="close-button" id="close-sidebar" aria-label="Close menu">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
+      <header class="header">
+        <button class="menu-button" id="open-sidebar" aria-label="Menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
         </button>
-      </div>
-      <div class="sidebar-content">
-        <nav>
-          <div class="menu-item">
-            <span class="menu-item-icon">
-            </span>
-            <a href="../sobre-produto-eduardo/pagina.html">
-              <span>Sobre o produto</span>
-            </a>
-          </div>
-          <div class="menu-item">
-            <span class="menu-item-icon">
-            </span>
-            <span>Planos e Preços</span>
-          </div>
-          <div class="menu-item">
-            <a href="../Artur-sobre-nos/sobre-nos.html">
-              <span class="menu-item-icon"></span>
-              <span>Sobre a Equipe</span>
-            </a>
-          </div>
-          <div class="menu-item">
-            <span class="menu-item-icon"></span>
-            <span>Links Úteis</span>
-          </div>
-          <div class="menu-item">
-            <a>
-              <span class="menu-item-icon"></span>
-              <span>Contato</span>
-            </a>
-          </div>
-        </nav>
-      </div>
-    </div>
-        <main>
-            <h1>Descrição</h1>
-            <p>O projeto de projetos da CHIHIRO vai ser um CRUD de cadastro de projetos
-                dos alunos e da comunidade do IFPR para mostrar ao público algo
-                semelhante a uma vitrine. Os projetos também poderão serem cadastrados
-                pelos alunos e posteriormente aprovados pelos professores.</p>
-
-            <p>Além disso, existem planos de OUATH2 com Google e integração com o
-                suap, nosso cliente vai ser o professor Frank.</p>
-            <div class="containerColunas">
-                <div class="coluna1">
-                    <div class="card">
-                        <img src="imagem.exemplo.jpg" alt="Imagem de Exemplo">
-                        <p>Descrição 1</p>
-                    </div>
-                    <div class="card">
-                        <img src="imagem.exemplo.jpg" alt="Imagem de Exemplo">
-                        <p>Descrição 3</p>
-                    </div>
-                </div>
-                <div class="cardCol3">
-                    <img src="imagem.exemplo.jpg" alt="Imagem de Exemplo">
-                    <p>Descrição 2</p>
-                </div>
-            </div>
-        </main>
-        <div>
-            <footer>
-                <section>
-                    <h5>link da nossa organização - - https://github.com/projeto-integrador-es-3</h5>
-                </section>
-            </footer>
+        <div class="header-bar">
+          <i class="fas fa-user logo" style="font-size: 20px"></i>
+          <span class="header-title">Team Chihiro</span>
         </div>
-    </div>
-</body>
+      </header>
+      <div class="sidebar-overlay" id="sidebar-overlay"></div>
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <button
+            class="close-button"
+            id="close-sidebar"
+            aria-label="Close menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="sidebar-content">
+          <nav>
+            <a href="../sobre-produto-eduardo/pagina.html">
+              <div class="menu-item">
+                <span class="menu-item-icon"> </span>
+                <span>Sobre o produto</span>
+              </div>
+            </a>
+            <div class="menu-item">
+              <span class="menu-item-icon"> </span>
+              <span>Planos e Preços</span>
+            </div>
+            <a href="../Artur-sobre-nos/sobre-nos.html">
+              <div class="menu-item">
+                <span class="menu-item-icon"></span>
+                <span>Sobre a Equipe</span>
+              </div>
+            </a>
+            <div class="menu-item">
+              <span class="menu-item-icon"></span>
+              <span>Links Úteis</span>
+            </div>
+            <a>
+              <div class="menu-item">
+                <span class="menu-item-icon"></span>
+                <span>Contato</span>
+              </div>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <main>
+        <h1>Descrição</h1>
+        <p>
+          O projeto de projetos da CHIHIRO vai ser um CRUD de cadastro de
+          projetos dos alunos e da comunidade do IFPR para mostrar ao público
+          algo semelhante a uma vitrine. Os projetos também poderão serem
+          cadastrados pelos alunos e posteriormente aprovados pelos professores.
+        </p>
 
+        <p>
+          Além disso, existem planos de OUATH2 com Google e integração com o
+          suap, nosso cliente vai ser o professor Frank.
+        </p>
+        <div class="containerColunas">
+          <div class="coluna1">
+            <div class="card">
+              <img src="imagem.exemplo.jpg" alt="Imagem de Exemplo" />
+              <p>Descrição 1</p>
+            </div>
+            <div class="card">
+              <img src="imagem.exemplo.jpg" alt="Imagem de Exemplo" />
+              <p>Descrição 3</p>
+            </div>
+          </div>
+          <div class="cardCol3">
+            <img src="imagem.exemplo.jpg" alt="Imagem de Exemplo" />
+            <p>Descrição 2</p>
+          </div>
+        </div>
+      </main>
+      <div>
+        <footer>
+          <section>
+            <h5>
+              link da nossa organização - -
+              https://github.com/projeto-integrador-es-3
+            </h5>
+          </section>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>

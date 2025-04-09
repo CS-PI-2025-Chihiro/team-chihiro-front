@@ -6,6 +6,35 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  /* mantenha suas outras propriedades para main */
+}
+
+footer {
+  margin-top: auto;
+  /* mantenha suas outras propriedades para footer */
+}
+
 .header {
   display: flex;
   align-items: center;

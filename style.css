@@ -27,12 +27,10 @@ body {
 
 main {
   flex: 1;
-  /* mantenha suas outras propriedades para main */
 }
 
 footer {
   margin-top: auto;
-  /* mantenha suas outras propriedades para footer */
 }
 
 .header {

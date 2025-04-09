@@ -1,54 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <script src="../../script.js"></script>
     <title>Chihiro | Planos e Preços</title>
-</head>
+  </head>
 
-<body data-theme="light">
-    <header>
+  <body data-theme="light">
+    <div id="app">
+      <header class="header">
+        <button class="menu-button" id="open-sidebar" aria-label="Menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        <div class="header-bar">
+          <i class="fas fa-user logo" style="font-size: 20px"></i>
+          <span class="header-title">Team Chihiro</span>
+        </div>
+      </header>
+      <div class="sidebar-overlay" id="sidebar-overlay"></div>
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <button
+            class="close-button"
+            id="close-sidebar"
+            aria-label="Close menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="sidebar-content">
+          <nav>
+            <a href="../../sobre-produto-eduardo/pagina.html">
+              <div class="menu-item">
+                <span class="menu-item-icon"> </span>
+                <span>Sobre o produto</span>
+              </div>
+            </a>
+            <a href="../../andrey/planos-precos/index.html">
+              <div class="menu-item">
+                <span class="menu-item-icon"> </span>
+                <span>Planos e Preços</span>
+              </div>
+            </a>
+            <a href="../../igor/links-uteis.html">
+              <div class="menu-item">
+                <span class="menu-item-icon"></span>
+                <span>Links Úteis</span>
+              </div>
+            </a>
+            <a href="../../igor/contato.html">
+              <div class="menu-item">
+                <span class="menu-item-icon"></span>
+                <span>Contato</span>
+              </div>
+            </a>
+            <a href="../faq/index.html">
+              <div class="menu-item">
+                <span class="menu-item-icon"></span>
+                <span>Faq</span>
+              </div>
+            </a>
+          </nav>
+        </div>
+      </div>
 
-    </header>
-
-    <main>
+      <main>
         <section class="config">
-            <button id="change-theme" onclick="changeTheme()">Dark</button>
-            <button id="increase-text" onclick="increaseText()">Large</button>
+          <button id="increase-text" onclick="increaseText()">Large</button>
         </section>
         <section class="service-container">
-            <div class="card">
-                <img src="images/free-service.png" alt="Free Service Picture">
-                <h1>Plano Grátis</h1>
-                <h3>Grátis</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, unde! 
-                Nam a optio veniam natus quas quidem reiciendis dignissimos aliquam necessitatibus, 
-                repudiandae officia labore vel rerum ut aliquid pariatur facilis.</p>
-            </div>
-            <div class="card">
-                <img src="images/default-service.png" alt="Default Service Picture">
-                <h1>Plano Padrão</h1>
-                <h3>R$14,90/mês</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim omnis, 
-                repudiandae ipsam eaque, animi, excepturi quae aut illo libero reprehenderit deleniti 
-                alias maiores magnam debitis exercitationem quas accusamus nisi?</p>
-            </div>
-            <div class="card">
-                <img src="images/premium-service.png" alt="Premium Service Picture">
-                <h1>Plano Premium</h1>
-                <h3>R$29,00/mês</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, illo! Deserunt 
-                molestiae consequuntur iusto veritatis fugit molestias velit id harum totam natus? 
-                Neque voluptas totam ipsum! Voluptatibus, maiores ipsa! Dolore?</p>
-            </div>
+          <div class="card">
+            <img src="images/free-service.png" alt="Free Service Picture" />
+            <h1>Plano Grátis</h1>
+            <h3>Grátis</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, unde! Nam a optio veniam natus quas quidem reiciendis
+              dignissimos aliquam necessitatibus, repudiandae officia labore vel
+              rerum ut aliquid pariatur facilis.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="images/default-service.png"
+              alt="Default Service Picture"
+            />
+            <h1>Plano Padrão</h1>
+            <h3>R$14,90/mês</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              enim omnis, repudiandae ipsam eaque, animi, excepturi quae aut
+              illo libero reprehenderit deleniti alias maiores magnam debitis
+              exercitationem quas accusamus nisi?
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="images/premium-service.png"
+              alt="Premium Service Picture"
+            />
+            <h1>Plano Premium</h1>
+            <h3>R$29,00/mês</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+              illo! Deserunt molestiae consequuntur iusto veritatis fugit
+              molestias velit id harum totam natus? Neque voluptas totam ipsum!
+              Voluptatibus, maiores ipsa! Dolore?
+            </p>
+          </div>
         </section>
-    </main>
+      </main>
 
-    <footer>
-        <p>© 2024 Engenharia de Software- IFPR Campus Paranavaí. Todos os direitos reservados. By Team Chihiro.</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
+      <footer>
+        <p>
+          © 2024 Engenharia de Software- IFPR Campus Paranavaí. Todos os
+          direitos reservados. By Team Chihiro.
+        </p>
+      </footer>
+      <script src="script.js"></script>
+    </div>
+  </body>
 </html>

@@ -1,32 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <script src="../../script.js"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>FAQs | Team Chihiro</title>
-</head>
+  </head>
 
-<body data-theme="light">
-    <header>
+  <body data-theme="light">
+    <div id="app">
+      <header class="header">
+        <button class="menu-button" id="open-sidebar" aria-label="Menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        <div class="header-bar">
+          <i class="fas fa-user logo" style="font-size: 20px"></i>
+          <span class="header-title">Team Chihiro</span>
+        </div>
+      </header>
+      <div class="sidebar-overlay" id="sidebar-overlay"></div>
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <button
+            class="close-button"
+            id="close-sidebar"
+            aria-label="Close menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="sidebar-content">
+          <nav>
+            <a href="../../sobre-produto-eduardo/pagina.html">
+              <div class="menu-item">
+                <span class="menu-item-icon"> </span>
+                <span>Sobre o produto</span>
+              </div>
+            </a>
+            <a href="../planos-precos/index.html">
+              <div class="menu-item">
+                <span class="menu-item-icon"> </span>
+                <span>Planos e Preços</span>
+              </div>
+            </a>
+            <a href="../../igor/links-uteis.html">
+              <div class="menu-item">
+                <span class="menu-item-icon"></span>
+                <span>Links Úteis</span>
+              </div>
+            </a>
+            <a href="../../igor/contato.html">
+              <div class="menu-item">
+                <span class="menu-item-icon"></span>
+                <span>Contato</span>
+              </div>
+            </a>
+            <a href="../faq/index.html">
+              <div class="menu-item">
+                <span class="menu-item-icon"></span>
+                <span>Faq</span>
+              </div>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <header></header>
 
-    </header>
-
-    <main>
+      <main>
         <section class="title-container">
-            <h1>FAQ (Perguntas Frequentes)</h1>
-            <section class="config">
-                <button id="change-theme" onclick="changeTheme()">Dark</button>
-                <button id="increase-text" onclick="increaseText()">Large</button>
-            </section>
+          <h1>FAQ (Perguntas Frequentes)</h1>
+          <section class="config">
+            <button id="increase-text" onclick="increaseText()">Large</button>
+          </section>
         </section>
         <ul class="faq-container"></ul>
-    </main>
+      </main>
 
-    <footer>
-        <p>© 2024 Engenharia de Software- IFPR Campus Paranavaí. Todos os direitos reservados. By Team Chihiro.</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
+      <footer>
+        <p>
+          © 2024 Engenharia de Software- IFPR Campus Paranavaí. Todos os
+          direitos reservados. By Team Chihiro.
+        </p>
+      </footer>
+      <script src="script.js"></script>
+    </div>
+  </body>
 </html>

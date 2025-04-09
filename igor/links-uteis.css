@@ -58,7 +58,8 @@ h1{
     margin-left: 10px;
 }
 
-.imagem-texto titulo{
+.imagem-texto .titulo{
+    margin: 0px;
     font-size: 30px;
     font-weight: bold;
 }

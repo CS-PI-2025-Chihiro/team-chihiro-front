@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="contato.css">
+        <meta name=description content="Entre em contato com a Team Chihiro pelo formulário online. Envie dúvidas, sugestões ou mensagens diretamente para nossa equipe do IFPR - Campus Paranavaí.">
+        <title>Contato</title>
+    </head>
+    <body>
+        <header>
+            <h1>Contato</h1>
+        </header>
+
+        <main>
+            <h2>Nos contate através do e-mail:</h2>
+            
+            <div class="container">
+                <form id="formulario" action="https://formsubmit.co/teamchihiroifpr@gmail.com" method="POST">
+                    <div class="formulario">
+                        <label for="email">E-mail:<br></label>
+                        <input class="email" required type="email" id="email" name="email">
+                    </div>
+                    <div class="formulario">
+                        <label for="assunto">Assunto:<br></label>
+                        <input required type="text" id="assunto" name="assunto">
+                    </div>
+                    <div class="formulario">
+                        <label for="mensagem">Mensagem:<br></label>
+                        <textarea required type="text" id="mensagem" name="mensagem"></textarea>
+                    </div>
+                    <button class="botao" type="submit">Enviar</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 Engenharia de Software- IFPR Campus Paranavaí. Todos os direitos reservados. By Team Chihiro.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+[
+    {
+        "question": "Como funciona o Plano Grátis?",
+        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat tempore sed laboriosam impedit, voluptatum nobis officiis illum minima deleniti repellat quis. Iste qui magni eaque temporibus recusandae a id ad."
+    },
+    {
+        "question": "Como funciona o Plano Padrão?",
+        "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, omnis? Corporis modi odit atque exercitationem. At iure illo vitae, architecto facere assumenda ipsum, labore numquam similique rerum inventore autem distinctio?"
+    },
+    {
+        "question": "Como funciona o Plano Premium?",
+        "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quia natus nihil culpa illo iusto, enim adipisci."
+    },
+    {
+        "question": "Assistência técnica está inclusa nos Planos?",
+        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit odio nam quaerat incidunt rerum."
+    },
+    {
+        "question": "Posso ter mais de um Plano?",
+        "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore beatae veritatis et ab natus quae sequi hic."
+    }
+]

@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="Artur-sobre-nos/css/sobre-nos.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="../../style.css" />
+    <script src="../../script.js"></script>
+    <title>Chihiro | Planos e Preços</title>
   </head>
 
-  <body>
+  <body data-theme="light">
     <div id="app">
       <header class="header">
         <button class="menu-button" id="open-sidebar" aria-label="Menu">
@@ -60,31 +60,31 @@
         </div>
         <div class="sidebar-content">
           <nav>
-            <a href="sobre-produto-eduardo/pagina.html">
+            <a href="../../sobre-produto-eduardo/pagina.html">
               <div class="menu-item">
                 <span class="menu-item-icon"> </span>
                 <span>Sobre o produto</span>
               </div>
             </a>
-            <a href="andrey/planos-precos/index.html">
+            <a href="../../andrey/planos-precos/index.html">
               <div class="menu-item">
                 <span class="menu-item-icon"> </span>
                 <span>Planos e Preços</span>
               </div>
             </a>
-            <a href="igor/links-uteis.html">
+            <a href="../../igor/links-uteis.html">
               <div class="menu-item">
                 <span class="menu-item-icon"></span>
                 <span>Links Úteis</span>
               </div>
             </a>
-            <a href="igor/contato.html">
+            <a href="../../igor/contato.html">
               <div class="menu-item">
                 <span class="menu-item-icon"></span>
                 <span>Contato</span>
               </div>
             </a>
-            <a href="andrey/faq/index.html">
+            <a href="../faq/index.html">
               <div class="menu-item">
                 <span class="menu-item-icon"></span>
                 <span>Faq</span>
@@ -93,57 +93,61 @@
           </nav>
         </div>
       </div>
-      <header>Sobre nós</header>
 
       <main>
-        <div class="top-cards">
+        <section class="config">
+          <button id="increase-text" onclick="increaseText()">Large</button>
+        </section>
+        <section class="service-container">
           <div class="card">
-            <img src="Artur-sobre-nos/images/ricler.jpg" alt="Foto do Ricler" />
-            <p>PO: Ricler</p>
+            <img src="images/free-service.png" alt="Free Service Picture" />
+            <h1>Plano Grátis</h1>
+            <h3>Grátis</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, unde! Nam a optio veniam natus quas quidem reiciendis
+              dignissimos aliquam necessitatibus, repudiandae officia labore vel
+              rerum ut aliquid pariatur facilis.
+            </p>
           </div>
-
-          <div class="card">
-            <img src="Artur-sobre-nos/images/mateus.jpg" alt="Foto do Mateus" />
-            <p>Scrum Master: Mateus</p>
-          </div>
-        </div>
-
-        <div class="bottom-cards">
-          <div class="card">
-            <img src="Artur-sobre-nos/images/igor.jpg" alt="Foto do Igor" />
-            <p>Dev: Igor</p>
-          </div>
-
-          <div class="card">
-            <img src="Artur-sobre-nos/images/andrey.jpg" alt="Foto do Andrey" />
-            <p>Dev: Andrey</p>
-          </div>
-
           <div class="card">
             <img
-              src="Artur-sobre-nos/images/eduardo.jpg"
-              alt="Foto do Eduardo"
+              src="images/default-service.png"
+              alt="Default Service Picture"
             />
-            <p>Dev: Eduardo</p>
+            <h1>Plano Padrão</h1>
+            <h3>R$14,90/mês</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              enim omnis, repudiandae ipsam eaque, animi, excepturi quae aut
+              illo libero reprehenderit deleniti alias maiores magnam debitis
+              exercitationem quas accusamus nisi?
+            </p>
           </div>
-
           <div class="card">
-            <img src="Artur-sobre-nos/images/artur.jpg" alt="Foto do Artur" />
-            <p>Dev: Artur</p>
+            <img
+              src="images/premium-service.png"
+              alt="Premium Service Picture"
+            />
+            <h1>Plano Premium</h1>
+            <h3>R$29,00/mês</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+              illo! Deserunt molestiae consequuntur iusto veritatis fugit
+              molestias velit id harum totam natus? Neque voluptas totam ipsum!
+              Voluptatibus, maiores ipsa! Dolore?
+            </p>
           </div>
-        </div>
+        </section>
       </main>
 
-      <div>
-        <footer>
-          <section>
-            <h3>
-              Link da nossa organização - -
-              https://github.com/CS-PI-2025-Chihiro
-            </h3>
-          </section>
-        </footer>
-      </div>
+      <footer>
+        <p>
+          © 2024 Engenharia de Software- IFPR Campus Paranavaí. Todos os
+          direitos reservados. By Team Chihiro.
+        </p>
+      </footer>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>

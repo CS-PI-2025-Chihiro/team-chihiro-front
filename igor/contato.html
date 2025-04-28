@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="Artur-sobre-nos/css/sobre-nos.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="contato.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js"></script>
+    <meta
+      name="description"
+      content="Entre em contato com a Team Chihiro pelo formulário online. Envie dúvidas, sugestões ou mensagens diretamente para nossa equipe do IFPR - Campus Paranavaí."
+    />
+    <title>Contato</title>
   </head>
-
   <body>
     <div id="app">
       <header class="header">
@@ -60,31 +63,37 @@
         </div>
         <div class="sidebar-content">
           <nav>
-            <a href="sobre-produto-eduardo/pagina.html">
+            <a href="../sobre-produto-eduardo/pagina.html">
               <div class="menu-item">
                 <span class="menu-item-icon"> </span>
                 <span>Sobre o produto</span>
               </div>
             </a>
-            <a href="andrey/planos-precos/index.html">
+            <a href="../andrey/planos-precos/index.html">
               <div class="menu-item">
                 <span class="menu-item-icon"> </span>
                 <span>Planos e Preços</span>
               </div>
             </a>
-            <a href="igor/links-uteis.html">
+            <a href="../index.html">
+              <div class="menu-item">
+                <span class="menu-item-icon"></span>
+                <span>Sobre a Equipe</span>
+              </div>
+            </a>
+            <a href="../igor/links-uteis.html">
               <div class="menu-item">
                 <span class="menu-item-icon"></span>
                 <span>Links Úteis</span>
               </div>
             </a>
-            <a href="igor/contato.html">
+            <a href="../igor/contato.html">
               <div class="menu-item">
                 <span class="menu-item-icon"></span>
                 <span>Contato</span>
               </div>
             </a>
-            <a href="andrey/faq/index.html">
+            <a href="../andrey/faq/index.html">
               <div class="menu-item">
                 <span class="menu-item-icon"></span>
                 <span>Faq</span>
@@ -93,57 +102,48 @@
           </nav>
         </div>
       </div>
-      <header>Sobre nós</header>
+      <header style="margin-top: 10px">
+        <h1>Contato</h1>
+      </header>
 
       <main>
-        <div class="top-cards">
-          <div class="card">
-            <img src="Artur-sobre-nos/images/ricler.jpg" alt="Foto do Ricler" />
-            <p>PO: Ricler</p>
-          </div>
+        <h2>Nos contate através do e-mail:</h2>
 
-          <div class="card">
-            <img src="Artur-sobre-nos/images/mateus.jpg" alt="Foto do Mateus" />
-            <p>Scrum Master: Mateus</p>
-          </div>
-        </div>
-
-        <div class="bottom-cards">
-          <div class="card">
-            <img src="Artur-sobre-nos/images/igor.jpg" alt="Foto do Igor" />
-            <p>Dev: Igor</p>
-          </div>
-
-          <div class="card">
-            <img src="Artur-sobre-nos/images/andrey.jpg" alt="Foto do Andrey" />
-            <p>Dev: Andrey</p>
-          </div>
-
-          <div class="card">
-            <img
-              src="Artur-sobre-nos/images/eduardo.jpg"
-              alt="Foto do Eduardo"
-            />
-            <p>Dev: Eduardo</p>
-          </div>
-
-          <div class="card">
-            <img src="Artur-sobre-nos/images/artur.jpg" alt="Foto do Artur" />
-            <p>Dev: Artur</p>
-          </div>
+        <div class="container">
+          <form
+            id="formulario"
+            action="https://formsubmit.co/teamchihiroifpr@gmail.com"
+            method="POST"
+          >
+            <div class="formulario">
+              <label for="email">E-mail:<br /></label>
+              <input
+                class="email"
+                required
+                type="email"
+                id="email"
+                name="email"
+              />
+            </div>
+            <div class="formulario">
+              <label for="assunto">Assunto:<br /></label>
+              <input required type="text" id="assunto" name="assunto" />
+            </div>
+            <div class="formulario">
+              <label for="mensagem">Mensagem:<br /></label>
+              <textarea required id="mensagem" name="mensagem"></textarea>
+            </div>
+            <button class="botao" type="submit">Enviar</button>
+          </form>
         </div>
       </main>
 
-      <div>
-        <footer>
-          <section>
-            <h3>
-              Link da nossa organização - -
-              https://github.com/CS-PI-2025-Chihiro
-            </h3>
-          </section>
-        </footer>
-      </div>
+      <footer>
+        <p>
+          © 2024 Engenharia de Software- IFPR Campus Paranavaí. Todos os
+          direitos reservados. By Team Chihiro.
+        </p>
+      </footer>
     </div>
   </body>
 </html>
